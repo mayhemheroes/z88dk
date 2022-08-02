@@ -2,5 +2,4 @@ project: z88dk
 target: z80asm
 
 cmds:
-  - cmd: /z88dk/bin/z80asm /test.asm
-    filepath: /test.asm
+  - cmd: /z80asm @@
