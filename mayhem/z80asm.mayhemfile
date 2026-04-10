@@ -1,0 +1,6 @@
+project: z88dk
+target: z80asm
+
+cmds:
+  - cmd: /z88dk/bin/z80asm @@
+    filepath: /tmp/input.asm
