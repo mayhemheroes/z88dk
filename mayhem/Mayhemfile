@@ -1,0 +1,10 @@
+# z88dk z80asm — sanitizer-instrumented file-input CLI (SPEC §6.2 item 11).
+# @@ is the input arg (wla-dx pattern). MFUZZ_COMPAT_LEVEL required for Mayhem file-input smoketest.
+# -b writes scratch .bin/.o beside the input in Mayhem's writable cwd.
+project: z88dk
+target: z80asm
+
+cmds:
+  - cmd: /mayhem/z80asm -b @@
+    env:
+      MFUZZ_COMPAT_LEVEL: "2"
