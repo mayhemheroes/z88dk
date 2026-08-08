@@ -1,0 +1,5 @@
+project: z88dk
+target: z80asm
+
+cmds:
+  - cmd: /z80asm @@
